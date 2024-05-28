@@ -1,67 +1,105 @@
 body {
-      --font: 'Inter';
+      --font: 'Inter Regular', 'Inter';
 
       background-color: hsl(0, 0%, 8%);
       font-family: var(--font);
       min-height: 100dvh;
+      margin: 0;
 
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
 }
 
-.card{
+.card {
       background-color: hsl(0, 0%, 12%);
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 35px;
+      padding: 25px;
       border-radius: 15px;
       gap: 15px;
-      margin: 0 20px;
-      width: clamp(200px, 100%, 300px);
+      margin: 0px 20px;
+      width: clamp(200px, 100%, 250px);
       min-width: 200px;
+      margin-top: auto;
 }
 
-.profile-info{
+.avatar {
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-bottom: 20px;
+}
+
+.avatar img {
+      width: 100px;
+      height: 100px;
+      display: inline;
+}
+
+.profile-info {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 }
 
-.profile-name{
+.profile-name {
       color: white;
-      font-size: 24px;
-      font-family: 'Inter';
+      font-size: 22px;
+      font-family: var(--font);
       font-weight: 700;
-      
+      letter-spacing: 1.1px;
+
 }
 
-.place{
+.place {
       color: hsl(75, 94%, 57%);
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 600;
       padding: 5px 0;
+      font-family: var(--font);
 }
 
-.message{
+.message {
       padding: 10px;
       color: white;
       font-weight: 400;
       font-size: 14px;
+      text-align: center;
 }
 
-.card a{
+.card a {
       color: white;
       text-decoration: none;
       font-weight: 600;
-      font-family: 'Inter';
-      padding: 15px 30px;
+      font-family: var(--font);
+      padding: 15px;
       box-sizing: border-box;
       background-color: hsl(0, 0%, 20%);
-      width: 100%;
       border-radius: 10px;
       text-align: center;
       font-size: 14px;
+      width: 100%;
+}
+
+.card a:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 12%);
+}
+
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+      color: white;
+      display: flex;
+      margin-top: auto;
+      bottom: 10px;
+}
+
+.attribution a {
+      color: hsl(228, 100%, 70%);
 }
