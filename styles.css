@@ -21,8 +21,7 @@ body {
       border-radius: 15px;
       gap: 15px;
       margin: 0px 20px;
-      width: clamp(200px, 100%, 250px);
-      min-width: 200px;
+      width: clamp(250px, 100%, 300px);
       margin-top: auto;
 }
 
